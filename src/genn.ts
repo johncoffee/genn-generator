@@ -3,8 +3,9 @@ import { ensureDir, readFile, writeFile } from 'fs-extra'
 import {join, resolve} from 'path'
 
 program
-  .option('-c, --component <compName>', 'add component')
-  .option('-o, --container <containerName>', 'add container')
+  .option('-a, --component <compName>', 'add component')
+  .option('-b, --container <containerName>', 'add container')
+  .option('-c, --home <homeName>', 'add home')
   .option('-n, --dry', 'Test run, no side effects')
   .parse(process.argv)
 
@@ -15,6 +16,12 @@ if (program.component) {
 }
 else if(program.container) {
   containerCmd(program.container)
+}
+else if (program.home) {
+  console.error("Home not implemented yet")
+}
+else {
+  program.outputHelp()
 }
 
 async function containerCmd (newName:string) {
