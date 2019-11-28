@@ -4,8 +4,8 @@ import {join, resolve} from 'path'
 
 program
   .option('-a, --component <compName>', 'add component')
-  .option('-b, --container <containerName>', 'add container')
-  .option('-c, --home <homeName>', 'add home')
+  .option('-c, --container <containerName>', 'add container comp.')
+  .option('-h, --home <homeName>', 'add a route home')
   .option('-n, --dry', 'Test run, no side effects')
   .parse(process.argv)
 
