@@ -1,0 +1,25 @@
+{
+  "name": "genn-generator",
+  "version": "1.0.0",
+  "description": "generator",
+  "bin": {
+    "genn": "bin/genn.js"
+  },
+  "main": "lib/genn.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "commonjs",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.20.0",
+    "fs-extra": "^8.1.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^8.0.0",
+    "@types/commander": "^2.12.2",
+    "@types/node": "^10.14.12",
+    "typescript": "^3.5.2"
+  }
+}
